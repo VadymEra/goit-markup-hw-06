@@ -1289,7 +1289,11 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   line-height: 111%;
   letter-spacing: 0.02em;
   padding: 0;
+    color: #2e2f42;
+    text-decoration: none;
 }
+
+
 
 .mobile-menu .mobile-address {
   display: initial;
