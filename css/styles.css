@@ -789,7 +789,6 @@ input {
 
 @media only screen and (min-width: 1158px) {
   .footer-container {
-    justify-content: space-between;
     flex-wrap: nowrap;
     gap: 0;
     flex-direction: row;
@@ -829,7 +828,12 @@ input {
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
+  
 }
+@media only screen and (min-width:768px){
+  text-align: start;
+}
+
 
 .social-media {
   display: flex;
@@ -908,7 +912,7 @@ input {
 
 @media only screen and (min-width: 1158px) {
   .email-input-footer {
-    margin-left: 80px;
+    margin-left: auto;
     align-items: start;
   }
 }
