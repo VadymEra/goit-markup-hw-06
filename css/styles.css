@@ -806,14 +806,14 @@ input {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (width: 768px) {
+@media only screen and (min-width: 768px) {
   .footer-logo-text {
     justify-content: start;
     align-items: start;
   }
 }
 
-@media only screen and (width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .footer-logo-text {
     margin-right: 120px;
   }
@@ -963,7 +963,7 @@ input {
   width: 264px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
   .footer-input {
     margin-right: 24px;
     margin-bottom: 0;
@@ -975,7 +975,6 @@ input {
     margin-bottom: 0;
     margin-right: 0;
     width: 264px;
-    margin-bottom: 0;
   }
 }
 
@@ -1299,6 +1298,11 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
     text-decoration: none;
 }
 
+.mobile-menu .nav-link.active {
+  color: #404BBF;
+}
+
+
 .mobile-conctacts-link {
   font-weight: 500;
     font-size: 20px;
@@ -1307,6 +1311,7 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
     padding: 0;
     color: #434455;
     text-decoration: none;
+    font-style: normal;
 }
 
 
@@ -1321,6 +1326,8 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
 .mobile-address-item .mobile-contacts-link {
   display: block;
   margin-bottom: 24px;
+  text-decoration: none;
+  font-style: normal;
 }
 .mobile-contacts-link.mobile-link-active {
   color: #404bbf;
@@ -1335,7 +1342,7 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
-
+  text-decoration: none;
   color: #434455;
 }
 
