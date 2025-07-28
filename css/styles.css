@@ -492,19 +492,24 @@ input {
 }
 
 .title-list {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
 @media only screen and (min-width: 768px) {
   .title-list {
     text-align: start;
     margin-bottom: 8px;
+    font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #2e2f42;
   }
 }
 
@@ -518,7 +523,6 @@ input {
 }
 
 .text {
-  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
@@ -828,6 +832,7 @@ input {
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
+  margin-right: auto;
   
 }
 @media only screen and (min-width:768px){
@@ -885,8 +890,9 @@ input {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin: 0 auto;
+  margin-right: auto;
   margin-bottom: 16px;
+
 }
 .subscribe-text {
   margin-bottom: 16px;
@@ -1293,6 +1299,15 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
     text-decoration: none;
 }
 
+.mobile-conctacts-link {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    padding: 0;
+    color: #434455;
+    text-decoration: none;
+}
 
 
 .mobile-menu .mobile-address {
