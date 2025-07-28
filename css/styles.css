@@ -154,10 +154,14 @@ input {
   flex-direction: row;
   gap: 0px;
   padding: 16px 0;
+  width: 115px;
+  height: 24px;
 }
 
 .logo-nav {
   margin-right: 76px;
+  width: 115px;
+    height: 24px;
 }
 
 .logo-dark {
@@ -214,6 +218,23 @@ input {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+  .link-address {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .link-address {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+}
+
 .link-address:focus,
 .link-address:hover {
   color: #404bbf;
@@ -268,8 +289,7 @@ input {
 }
 
 @media only screen and (min-width: 767.98px) {
-  .greeting-section .container {
-    padding: 112px 0;
+  .hero {
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -287,36 +307,34 @@ input {
         ),
         url("../images/tablet/imgtb@hero-bg-2x.webp");
     }
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .greeting-section .container {
-    padding: 188px 0;
-    max-width: 100vw;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office.jpg"),
-      url("../images/desktop/imgdesk@hero-bg-1x.webp");
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/desktop/imgdesk@hero-bg-2x.webp");
-    }
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-ofice-desk.jpg"),
+      url("../images/desktop/imgdesk@hero-bg-1x.webp");
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgb(46 47 66 / 0.7), rgb(46 47 66 / 0.7)),
+      url(../images/desktop/imgdesk@hero-bg-2x.webp);
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
-  .hero-container {
+  .hero {
     padding: 112px 0;
   }
 }
@@ -346,7 +364,7 @@ input {
 
 @media only screen and (min-width: 1158px) {
   .title-hero {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
 }
 
@@ -758,7 +776,7 @@ input {
   gap: 72px;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1157.98px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .container.footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1195,7 +1213,6 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
     display: none;
   }
 }
-
 
 .mobile-menu-btn {
   padding: 0;
